@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pretty-button.css"> 
   <link rel="stylesheet" href="index-pretty.css"> 
   <title>JRA Landscaping</title>
@@ -11,26 +13,37 @@
     h1 {
       font-size: 50px;
     }
+    /* This will ensure the buttons are stacked vertically */
+    a {
+      display: block;  /* Ensures each button takes a full line */
+      margin-bottom: 10px;  /* Adds space between buttons */
+    }
+    button {
+      width: 200px; /* Optional: Set button width */
+    }
+    /* Add more space between the second button and the first */
+    .button {
+      margin-top: 30px; /* Adjust this value to your liking */
+    }
   </style>
 </head>
 <body>
   <h1>Welcome to JRA Landscaping</h1>
 
-  <!-- Button with the 'btn' class to apply pretty-button.css styles -->
+  <!-- Sign up button with 'btn' class -->
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
     <button class="btn">Click to sign up</button>
   </a>
 
-  <!-- Another button with the same 'btn' class -->
+  <!-- Another button with 'button' class, keeping the structure intact -->
   <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-<button class="button">
-  <div class="display">
-    <div id="msg">Click To Sign Up</div>
-  </div>
-  
-  <span></span>
-  <span></span>
-</button>
+    <button class="button">
+      <div class="display">
+        <div id="msg">Click To Register A Time And Location</div>
+      </div>
+      <span></span>
+      <span></span>
+    </button>
   </a>
 </body>
 </html>
